@@ -9,15 +9,11 @@ class MinimalABSdiffInArray():
     def findMinimal(self):
         n = self.n
         arr = self.arr
-        # using bubble sort
+        arr.sort()
         minAbsdiff = sys.maxint
-        for i in range(0,n):
-            x = arr[i]
-            for j in range(0,n):
-                if i == j:
-                    continue
-                absdiff = abs(arr[i] - arr[j])
-                if i != j and absdiff < minAbsdiff:
+        for i in range(0,n-1):
+            absdiff = abs(arr[i] - arr[i+1])
+            if absdiff < minAbsdiff:
                     minAbsdiff = absdiff
 
         return minAbsdiff
