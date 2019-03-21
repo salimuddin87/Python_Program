@@ -10,6 +10,9 @@ $ python prog.py 4 -v 2
 the square of 4 equals 16
 $ python prog.py 4 -v 3
 16
+
+Let's restrict the values of --verbose option 
+Because 3 is not a valid option
 """
 
 import argparse
