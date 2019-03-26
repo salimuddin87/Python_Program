@@ -11,3 +11,7 @@ salim
 >>> y = stdout.split('\n')[1:][:-1]
 >>> print y
 [' kabeer ', ' ansari ', ' year ']
+>>> y = ''.join(y)
+>>> print y
+ kabeer  ansari  year
+ 
