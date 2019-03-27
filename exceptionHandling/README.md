@@ -16,6 +16,7 @@ The try statement works as follows.
 
 A try statement may have more than one except clause, to specify handlers for different exceptions. At most one handler will be executed. Handlers only handle exceptions that occur in the corresponding try clause, not in other handlers of the same try statement. An except clause may name multiple exceptions as a parenthesized tuple, for example:
 
-```except (RuntimeError, TypeError, NameError):
-         pass
+```
+except (RuntimeError, TypeError, NameError):
+    pass
 ```
