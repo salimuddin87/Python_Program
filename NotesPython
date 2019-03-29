@@ -1,0 +1,27 @@
+>>> g = [i for i in xrange(10)]
+>>> print g
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> l = (i for i in xrange(10))
+>>> print l
+<generator object <genexpr> at 0x02768B20>
+>>> type(l)
+<type 'generator'>
+-------------------------------------------------------------------------------------------
+
+>>> stdout = "salim \n kabeer \n ansari \n year \n typeerror"
+>>> print stdout
+salim 
+ kabeer 
+ ansari 
+ year 
+ typeerror
+>>> x = stdout.split('\n')
+>>> print x
+['salim ', ' kabeer ', ' ansari ', ' year ', ' typeerror']
+>>> y = stdout.split('\n')[1:][:-1]
+>>> print y
+[' kabeer ', ' ansari ', ' year ']
+>>> y = ''.join(y)
+>>> print y
+ kabeer  ansari  year
+ -------------------------------------------------------------------------------------------
