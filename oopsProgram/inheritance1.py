@@ -2,6 +2,13 @@
 class SubClassName (ParentClass1[, ParentClass2, ...]):
    'Optional class documentation string'
    class_suite
+
+You can use issubclass() or isinstance() functions to check a relationships of two classes and instances.
+   - The issubclass(sub, sup) boolean function returns true if the given subclass sub is indeed a 
+      subclass of the superclass sup.
+   - The isinstance(obj, Class) boolean function returns true if obj is an instance of class Class
+      or is an instance of a subclass of Class
+
 """
 
 #!/usr/bin/python
