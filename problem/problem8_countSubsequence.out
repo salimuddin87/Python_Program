@@ -1,0 +1,87 @@
+First element matched in P and S!
+countSubsequence(S[1:], P[1:]) + countSubsequence(S[1:], P)
+First element matched in P and S!
+countSubsequence(S[1:], P[1:]) + countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+First element matched in P and S!
+countSubsequence(S[1:], P[1:]) + countSubsequence(S[1:], P)
+Length of P is 0 -> pattern found!
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+First element matched in P and S!
+countSubsequence(S[1:], P[1:]) + countSubsequence(S[1:], P)
+Length of P is 0 -> pattern found!
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+P and S are equals with length 1!
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+First element matched in P and S!
+countSubsequence(S[1:], P[1:]) + countSubsequence(S[1:], P)
+First element matched in P and S!
+countSubsequence(S[1:], P[1:]) + countSubsequence(S[1:], P)
+Length of P is 0 -> pattern found!
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+P and S are equals with length 1!
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+P is greater than S!
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+First element matched in P and S!
+countSubsequence(S[1:], P[1:]) + countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+First element matched in P and S!
+countSubsequence(S[1:], P[1:]) + countSubsequence(S[1:], P)
+First element matched in P and S!
+countSubsequence(S[1:], P[1:]) + countSubsequence(S[1:], P)
+Length of P is 0 -> pattern found!
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+P and S are equals with length 1!
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+P is greater than S!
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+No match in last comparison!
+countSubsequence(S[1:], P)
+P is greater than S!
+Count of subsequence is :  7
