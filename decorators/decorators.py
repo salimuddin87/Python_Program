@@ -1,3 +1,9 @@
+"""
+A Decorator takes in a function, add some functionality and return it.
+Decorators add functionality to an existing code called metaprogramming.
+
+"""
+
 def outer(func):
     print "Inside outer function!"
     def inner():
