@@ -12,7 +12,7 @@ def minimumSwaps(arr):
     minSwap = 0
     index = range(1, len(arr)+1)
     for i in range(0, len(arr)):
-        for j in range(0, len(index)):
+        for j in range(i, len(index)):
             if arr[i] == index[j] and i != j:
                 temp = index[i]
                 index[i] = index[j]
