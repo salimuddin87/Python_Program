@@ -46,3 +46,4 @@ print "obj.__doc__ : ", obj.__doc__
 #print "obj.__bases__ : ", obj.__bases__
 print "obj.__module__ : ", obj.__module__
 print "obj.__dict__ : ", obj.__dict__
+print "Class name : ", obj.__class__.__name__
