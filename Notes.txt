@@ -1,5 +1,0 @@
-Python has ways to convert any value to a string: pass it to the repr() or str() functions.
-
-The str() function is meant to return representations of values which are fairly human-readable, 
-while repr() is meant to generate representations which can be read by the interpreter (or will 
-force a SyntaxError if there is no equivalent syntax).

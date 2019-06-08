@@ -23,9 +23,16 @@ class IterateDictionary():
             print key, value
         return True
 
+    def iterateBySet(self):
+        print "Iterate by set"
+        for item in self.initDict.items():
+            print item
+        return True
+
 
 if __name__ == '__main__':
     obj1 = IterateDictionary()
     obj1.defaultMethod()
     obj1.iterateValues()
     obj1.iterateKeysValues()
+    obj1.iterateBySet()

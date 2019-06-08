@@ -43,5 +43,3 @@ os.rename(src, dst)
 
 #Remove/delete the directory path
 os.rmdir(path)
-
-

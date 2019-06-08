@@ -1,5 +1,10 @@
 
-The use of iterators pervades and unifies Python. Behind the scenes, the for statement calls iter() on the container object. The function returns an iterator object that defines the method next() which accesses elements in the container one at a time. When there are no more elements, next() raises a StopIteration exception which tells the for loop to terminate. This example shows how it all works:
+# The use of iterators pervades and unifies Python. Behind the scenes, 
+# the for statement calls iter() on the container object. The function 
+# returns an iterator object that defines the method next() which accesses 
+# elements in the container one at a time. When there are no more elements, 
+# next() raises a StopIteration exception which tells the for loop to terminate. 
+# This example shows how it all works:
 
 >>> s = 'abc'
 >>> it = iter(s)
