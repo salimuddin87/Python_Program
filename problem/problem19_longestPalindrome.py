@@ -2,11 +2,8 @@
 
 
 def checkPalindrome(string):
-	if string == string[::-1]:
-		return True
-	else:
-		return False
-
+	return string == string[::-1]
+	
 # By brute-force method
 def findLargestPalindrome(givenStr):
 	palinString = ""
