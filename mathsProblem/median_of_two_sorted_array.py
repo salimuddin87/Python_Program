@@ -1,49 +1,58 @@
 # Median to two sorted array
-
-def medianoftwosortedArray(A, B):
-	#import pdb; pdb.set_trace()
-	nA = len(A)
-	nB = len(B)
-
-	tl = nA + nB
-	medIndex = 0
-	even = False
-
-	if tl % 2 == 0:
-		medIndex = int(tl/2 - 1)
-		even = True
-	else:
-		medIndex = int((tl-1)/2)
-
-	i = j = count = 0
-	while i < nA and j < nB:
-		if A[i] < B[j]:
-			i += 1
-			count += 1
-		else:
-			j += 1
-			count += 1
-		if count == medIndex:
-			if even:
-				return (A[i] + B[j])/2
-			return min(A[i], B[j])
-	while i < nA:
-		i += 1
-		count += 1
-		if count == medIndex:
-			if even:
-				return (A[i] + A[i+1])/2
-			return A[i]
-
-	while j < nB:
-		j += 1
-		count += 1
-		if count == medIndex:
-			if even:
-				return (B[j] + B[j+1])/2
-			return B[j]
-
-if __name__ == '__main__':
-	B = [1,3]
-	A = [2,4,5,6,7,8,9]
-	print(medianoftwosortedArray(A, B))
+class Solution:
+    def findMedianSortedArrays(self, nums1, nums2):
+        nA = len(nums1)
+        nB = len(nums2)
+        
+        if not nA and nB == 1:
+            return nums2[0]
+        if not nB and nA == 1:
+            return nums1[0]
+        if nA ==1 and nB == 1:
+            return (nums1[0] + nums2[0])/2
+        
+        tl = nA + nB
+        medIndex = 0
+        even = False
+        
+        if tl % 2 == 0:
+            medIndex = int(tl / 2 - 1)
+            even = True
+        else:
+            medIndex = int((tl - 1)/2)
+        
+        i = j = count = 0
+        while i < nA and j < nB:
+            if nums1[i] < nums2[j]:
+                if count == medIndex:
+                    if even:
+                        if (i+1) < nA:
+                            return (nums1[i] + min(nums1[i+1], nums2[j]))/2
+                        else:
+                            return (nums1[i] + nums2[j])/2
+                    return nums1[i]
+                i += 1
+            else:
+                if count == medIndex:
+                    if even:
+                        if (j+1) < nB:
+                            return (nums2[j] + min(nums2[j+1], nums1[i]))/2
+                        else:
+                            return (nums2[j] + nums1[i])/2
+                    return nums2[j]
+                j += 1
+            count += 1
+        while i < nA:
+            if count == medIndex:
+                if even:
+                    return (nums1[i] + nums1[i+1])/2
+                return nums1[i]
+            i += 1
+            count += 1
+        while j < nB:
+            if count == medIndex:
+                if even:
+                    return (nums2[j] + nums2[j+1])/2
+                return nums2[j]
+            j += 1
+            count += 1

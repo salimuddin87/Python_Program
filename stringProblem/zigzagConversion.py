@@ -3,7 +3,7 @@ def zigzagconversion(s, k):
 	n = len(s)
 	if not n:
 	    return ""
-        if k == 1:
+	if k == 1:
 	    return s
 
 	col = int(n / (k-1)) + 1
@@ -45,3 +45,5 @@ if __name__ == '__main__':
 	s2 = "PAYPALISHIRINGEXPERIENCE"
 	print(zigzagconversion(s1, 4))
 	print(zigzagconversion(s2, 4))
+	print(zigzagconversion("A", 1))
+	print(zigzagconversion("abc", 2))

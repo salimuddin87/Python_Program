@@ -24,6 +24,11 @@ def findLargestPalindrome(givenStr):
 
 # Dynamic programming
 def findLargestPalindromeDynamic(givenStr):
+	if not len(givenStr):
+		return ""
+	if len(givenStr) == 1:
+		return givenStr
+
 	startIndex = 0
 	palinLength = 1
 	sparseMatrix = [
@@ -68,7 +73,8 @@ if __name__ == '__main__':
 	#import pdb; pdb.set_trace()
 
 	givenStr = "saaxyzyxsrtptrs"
-	string = "haapabh"
+	string = "ha"
 	print(findLargestPalindrome(string))
 	print(findLargestPalindromeDynamic(givenStr))
-	print(findLargestPalindromeDynamic("babad"))
+	print(findLargestPalindromeDynamic("b"))
+	print(findLargestPalindromeDynamic("ab"))
