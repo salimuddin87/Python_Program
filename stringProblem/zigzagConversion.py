@@ -1,6 +1,11 @@
 
 def zigzagconversion(s, k):
 	n = len(s)
+	if not n:
+	    return ""
+        if k == 1:
+	    return s
+
 	col = int(n / (k-1)) + 1
 	res = [[0 for x in range(col)] for y in range(k)]
 	
