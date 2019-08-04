@@ -1,0 +1,7 @@
+OrderedDict([('Mail App', 0), ('Video Call App', 1), ('Chat App', 2)])
+OrderedDict([('Authentication API', 0), ('Data Storage API', 1), ('Search API', 2), ('Presence API', 3), ('Video Compression API', 4)])
+['0', 'v6', 'v8']
+['v10', 'v11', 'v11']
+['v6', '0', '0']
+['0', '0', 'v2']
+['0', 'v3', '0']

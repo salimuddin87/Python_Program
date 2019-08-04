@@ -1,13 +1,15 @@
 import os
 
+from collections import OrderedDict
+
 presentDir = os.path.abspath(os.path.dirname(__file__))
 
 
 def allLatestVersionApp(file):
 	
 	apiVersion = list()
-	appDict = dict() # columns of apiVersion
-	apiDict = dict() # rows of apiVersion
+	appDict = OrderedDict() # columns of apiVersion
+	apiDict = OrderedDict() # rows of apiVersion
 	appCount = 0
 	apiCount = 0
 	appChange = False
@@ -18,22 +20,25 @@ def allLatestVersionApp(file):
 		while line != "":
 			#print(line)
 			tempList = line.strip().split(',') # strip to remove newline
+
 			# Add app if not present in appDict
 			if tempList[0].strip() not in appDict.keys():
 				appDict[tempList[0].strip()] = appCount
 				appCount += 1
 				appChange = True
+
 			# Add api if not present in apiDict
 			if tempList[1].strip() not in apiDict.keys():
 				apiDict[tempList[1].strip()] = apiCount
 				apiCount += 1
 				apiChange = True
+
 			# when new api comes create a new list
 			if apiChange:
 				apiVersion.append(["0" for x in range(appCount)])
-				apiVersion[apiCount-1][appCount-1] = tempList[2].strip()
 				apiChange = False
-			elif appChange:
+
+			if appChange:
 				# when new app comes append at the end
 				apiVersion[apiDict[tempList[1].strip()]].append(tempList[2].strip())
 				appChange = False
@@ -49,13 +54,33 @@ def allLatestVersionApp(file):
 
 			line = fp.readline()
 
-	print(appDict)
-	print(apiDict)
-	for i in range(len(apiVersion)):
-		print(apiVersion[i])
+	# check app whose all api is latest
+	for colkey in appDict.keys():
+		for rowkey in apiDict.keys():
+			#print(rowkey, colkey)
+			if apiVersion[apiDict[rowkey]][appDict[colkey]] == "0":
+				if apiDict[rowkey] == len(apiVersion)-1:
+					return colkey
+				else:
+					continue
+
+			if apiVersion[apiDict[rowkey]][appDict[colkey]] != max(apiVersion[apiDict[rowkey]]):
+				break
+			
 	return False
+
+	"""
+	output = presentDir + "/output.txt"
+	with open(output, 'w') as fp:
+		fp.write(str(appDict)+"\n")
+		fp.write(str(apiDict)+"\n")
+		for i in range(len(apiVersion)):
+			fp.write(str(apiVersion[i])+"\n")
+
+	return False
+	"""
 
 if __name__ == '__main__':
 	file = presentDir + "/input.txt"
-	print(file)
+	#print(file)
 	print(allLatestVersionApp(file))
