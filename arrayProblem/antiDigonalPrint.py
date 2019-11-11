@@ -1,5 +1,6 @@
 def printDiagonally(arr):
 	n = len(arr)
+	m = len(arr[0])-1
 	res = []
 
 	# for upper half of square matrix
@@ -16,7 +17,7 @@ def printDiagonally(arr):
 	for i in range(1,n):
 		res.append([])
 		row = i
-		col = 2
+		col = m 
 		while row < n:
 			res[n+i-1].append(arr[row][col])
 			row += 1
@@ -25,9 +26,14 @@ def printDiagonally(arr):
 	print res
 
 if __name__ == "__main__":
-	arr = [
+	arr1 = [
 	[1,2,3],
 	[4,5,6],
 	[7,8,9]]
 
-	printDiagonally(arr)
+	arr = [
+	[1,2,3,4],
+	[5,6,7,8],
+	[9,10,11,12]]
+
+	printDiagonally(arr1)
