@@ -1,10 +1,7 @@
 import logging
 
-# 10 DEBUG
-# 20 INFO
-# 30 WARNING 
-# 40 ERROR
-# 50 CRITICAL
+# 10 DEBUG , 20 INFO
+# 30 WARNING , 40 ERROR, 50 CRITICAL
 
 logging.basicConfig(filename="test.log", level=logging.DEBUG, 
                     format='%(asctime)s:%(levelname)s:%(message)s')

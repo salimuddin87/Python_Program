@@ -1,0 +1,27 @@
+2020-05-30 00:24:55,038:DEBUG:Add: 20 + 10 = 30
+2020-05-30 00:24:55,038:DEBUG:sub: 20 + 10 = 10
+2020-05-30 00:24:55,038:DEBUG:Mul: 20 + 10 = 200
+2020-05-30 00:24:55,038:DEBUG:Div: 20 + 10 = 2.0
+2020-05-30 00:39:23,796:INFO:Add: 20 + 10 = 30
+2020-05-30 00:39:23,796:INFO:sub: 20 + 10 = 10
+2020-05-30 00:39:23,796:DEBUG:Mul: 20 + 10 = 200
+2020-05-30 00:39:23,796:DEBUG:Div: 20 + 10 = 2.0
+
+2020-05-30 00:41:31,719:INFO:Add: 20 + 10 = 30
+2020-05-30 00:41:31,719:INFO:sub: 20 + 10 = 10
+2020-05-30 00:42:32,891:INFO:Add: 20 + 10 = 30
+2020-05-30 00:42:32,891:INFO:sub: 20 + 10 = 10
+2020-05-30 00:42:32,891:DEBUG:Mul: 20 + 10 = 200
+2020-05-30 00:42:32,891:DEBUG:Div: 20 + 10 = 2.0
+2020-05-30 00:47:53,367:ERROR:Tried to divide by zero
+2020-05-30 00:48:10,413:ERROR:Tried to divide by zero
+2020-05-30 00:52:24,358:ERROR:Tried to divide by zero
+Traceback (most recent call last):
+  File "c:/Python_Program/python3/logging/Advanced/sample.py", line 37, in divide
+    result = x / y
+ZeroDivisionError: division by zero
+2020-05-30 00:56:40,331:ERROR:Tried to divide by zero
+Traceback (most recent call last):
+  File "c:/Python_Program/python3/logging/Advanced/sample.py", line 38, in divide
+    result = x / y
+ZeroDivisionError: division by zero
