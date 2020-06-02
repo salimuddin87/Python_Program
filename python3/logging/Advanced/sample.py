@@ -51,10 +51,10 @@ add_result = add(num_1, num_2)
 logger.info('Add: {} + {} = {}'.format(num_1, num_2, add_result))
 
 sub_result = subtract(num_1, num_2)
-logger.info('sub: {} + {} = {}'.format(num_1, num_2, sub_result))
+logger.info('sub: {} - {} = {}'.format(num_1, num_2, sub_result))
 
 mul_result = multiply(num_1, num_2)
-logger.debug('Mul: {} + {} = {}'.format(num_1, num_2, mul_result))
+logger.debug('Mul: {} * {} = {}'.format(num_1, num_2, mul_result))
 
 div_result = divide(num_1, num_2)
-logger.debug('Div: {} + {} = {}'.format(num_1, num_2, div_result))
+logger.debug('Div: {} / {} = {}'.format(num_1, num_2, div_result))
