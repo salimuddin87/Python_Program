@@ -2,6 +2,7 @@ import logging
 
 from make_logger import MakeLogger
 
+
 logger = MakeLogger(__name__)
 
 
@@ -31,6 +32,9 @@ def divide(x, y):
 num_1 = 20
 num_2 = 10
 
+
+logger.info('-----------Arithmetic Operation--------------')
+
 add_result = add(num_1, num_2)
 logger.info('Add: {} + {} = {}'.format(num_1, num_2, add_result))
 
@@ -42,3 +46,4 @@ logger.error('Mul: {} * {} = {}'.format(num_1, num_2, mul_result))
 
 div_result = divide(num_1, num_2)
 logger.warn('Div: {} / {} = {}'.format(num_1, num_2, div_result))
+
