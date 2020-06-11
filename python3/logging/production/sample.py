@@ -23,8 +23,8 @@ def divide(x, y):
     try:
         result = x / y
     except ZeroDivisionError:
-        # logger.error('Tried to divide by zero') # To log ERROR
-        logger.exception('Tried to divide by zero') # To log Traceback
+        logger.error('Tried to divide by zero') # To log ERROR
+        # logger.exception('Tried to divide by zero') # To log Traceback
     else:
         return result
 
