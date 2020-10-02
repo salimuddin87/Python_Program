@@ -15,8 +15,6 @@ def prime_product(m):
             temp = m / i
             if is_prime(temp):
                 return True
-            else:
-                return False
 
     return False
 
