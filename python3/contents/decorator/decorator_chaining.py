@@ -1,27 +1,32 @@
 # First decorator
 def star(func):
-
     def inner(*args, **kwargs):
-        print "*" * 50
+        print("*" * 50)
         func(*args, **kwargs)
-        print "*" * 50
+        print("*" * 50)
+
     return inner
+
 
 # 2nd decorator
 def percent(func):
-    
     def inner(*args, **kwargs):
-        print "%" * 50
+        print("%" * 50)
+
         func(*args, **kwargs)
-        print "%" * 50
+        print("%" * 50)
+
     return inner
 
 @star
 @percent
 def printer(msg):
-    print msg
+    print(msg)
 
-printer("Hello, Salim")
+
+if __name__ == '__main__':
+    printer("Hello, Salim")
+
 
 # we can also write as
 # printer = star(percent(printer))
