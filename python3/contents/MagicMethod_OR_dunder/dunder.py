@@ -1,21 +1,21 @@
 """
 Dunder or magic methods in Python are the methods having two prefix and suffix
-underscores in the method name. Dunder here means “Double Under (Underscores)”. 
+underscores in the method name. Dunder here means “Double Under (Underscores)”.
 These are commonly used for operator overloading.
 
 """
 class string:
-	"""docstring for string"""
-	def __init__(self, str1): # Magic method
-		self.str1 = str1
+    """docstring for string"""
+    def __init__(self, str1):  # Magic method
+        self.str1 = str1
 
-	def __str__(self):
-		return ("Object String is : {}".format(self.str1))
+    def __str__(self):
+        return "Object String is : {}".format(self.str1)
 
 
 if __name__ == '__main__':
-	s = string("Hello")
-	print(s)
+    s = string("Hello")
+    print(s)
 
 """
 Output without __str__

@@ -5,12 +5,12 @@ def divide(x, y):
     try:
         result = x / y
     except ZeroDivisionError:
-        print "division by zero!"
+        print("division by zero!")
     else:
-        print "Result is ", result
+        print("Result is ", result)
     finally:
-        print "Executing finally clause"
+        print("Executing finally clause")
 
 divide(6, 2)
-print "*" * 50
+print("*" * 50)
 divide(2, 0)

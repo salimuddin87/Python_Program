@@ -11,5 +11,5 @@ class MyError(Exception):
 try:
     raise MyError(2*2)
 except MyError as e:
-    print 'My exception occurred, value: ', e.value
+    print('My exception occurred, value: ', e.value)
 
