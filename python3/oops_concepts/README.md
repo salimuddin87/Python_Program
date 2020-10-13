@@ -21,5 +21,3 @@
   Sample Call : cmp(obj, x)
 
 Note:- A namespace is a mapping from names to objects.
-
-
