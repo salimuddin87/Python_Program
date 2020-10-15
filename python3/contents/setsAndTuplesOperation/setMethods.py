@@ -4,11 +4,11 @@ print(my_set)
 
 # Mixed datatypes
 my_set = {1.0, 'Hello', (1, 2, 3), 5}
-print(my_set)
+print("Mixed data types: ",my_set)
 
 # set from a list
 list1 = [1, 2, 3, 1, 4]
-print(set(list1))
+print("Convert list to set: ",set(list1))
 
 # initialize a set
 tempSet = set()
@@ -16,20 +16,20 @@ tempSet = set()
 # add and update in a set
 my_set = {1, 3}
 my_set.add(2)
-print("my_set : ", my_set)
+print("my_set1 : ", my_set)
 
 my_set.update([2, 3, 4])
-print("my_set : ", my_set)
+print("my_set2 : ", my_set)
 
 my_set.update([4, 5], {6, 7, 8})
-print("my_set : ", my_set)
+print("my_set3 : ", my_set)
 
 # The only difference between the two is that, while using discard() 
 # if the item does not exist in the set, it remains unchanged. But 
 # remove() will raise an error in such condition.
 my_set.discard(4)
 my_set.remove(6)
-print("my_set : ", my_set)
+print("my_set4 : ", my_set)
 
 # pop and clear from a set
 my_set1 = set("HelloWorld")
