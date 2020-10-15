@@ -1,7 +1,5 @@
 # Json Handling
-import json
-
-jsonText = """
+json_text = """
 {
     "data": {
         "result": [
@@ -48,12 +46,16 @@ jsonText = """
 }
 """
 
+
+import time
+import json
+
 # convert epoch time to gmtime
-time.strftime('%Y-%m-%d %H:%M:%S', time.gmtime(1572258815.476)
+time.strftime('%Y-%m-%d %H:%M:%S', time.gmtime(1572258815.476))
 
 
-unicodeType = json.loads(json.dumps(jsonText))
-dictType = json.loads(jsonText)
-print len(dictType["data"]["result"])
-print dictType["data"]["result"][0]["metric"]["instance"].split(":")[0].strip()
-print dictType["data"]["result"][0]["value"]
+unicode_type = json.loads(json.dumps(json_text))
+dict_type = json.loads(json_text)
+print(len(dict_type["data"]["result"]))
+print(dict_type["data"]["result"][0]["metric"]["instance"].split(":")[0].strip())
+print(dict_type["data"]["result"][0]["value"])
