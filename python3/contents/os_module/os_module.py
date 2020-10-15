@@ -1,12 +1,12 @@
 import os
 import time
 
-#-------------------------------------
+# -------------------------------------
 presentDir = os.path.abspath(os.path.dirname(__file__))
-print presentDir
+print(presentDir)
 # -------------------------------------
 curDir = os.getcwd()
-print curDir
+print(curDir)
 
 os.mkdir('newDir')
 

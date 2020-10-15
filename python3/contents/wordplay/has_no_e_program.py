@@ -6,7 +6,7 @@ import pdb
 
 def has_no_e_average():
 
-    pdb.set_trace()
+    # pdb.set_trace()
     withE = 0
     withoutE = 0
     with open('words.txt', 'r') as fin:
@@ -28,8 +28,8 @@ def has_no_e_average():
     print float(TotalWords[0])
     """
     average = 100 * withoutE/float(withE + withoutE)
-    print "Percentage of no_e_words is : %0.2f" % average
-    return
+    print("Percentage of no_e_words is : %0.2f" % average)
+    return 0
 
 
 def has_no_e(word):
