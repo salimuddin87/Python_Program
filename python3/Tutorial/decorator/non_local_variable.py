@@ -1,8 +1,8 @@
 def outer_function():
     a = 5
+
     def inner_function():
-        #nonlocal a
-        a = 10
+        a = 10  # nonlocal a
         print("Inner function a : ", a)
     inner_function()
     print("Outer function a : ", a)

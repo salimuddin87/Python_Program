@@ -10,6 +10,7 @@ closure can provide an alternative.
 
 """
 
+
 def make_multiplier_of(n):
     def multiplier(x):
         return x * n
@@ -30,9 +31,9 @@ if __name__ == '__main__':
     times3 = make_multiplier_of(3)
     times5 = make_multiplier_of(5)
 
-    print("3 times 5: ",times3(5))
-    print("5 times 5: ",times5(5))
-    print("5 times 3 times 5: ",times5(times3(5)))
+    print("3 times 5: ", times3(5))
+    print("5 times 5: ", times5(5))
+    print("5 times 3 times 5: ", times5(times3(5)))
 
     print("\n Print msg example for closure!")
     another = print_msg('Hello, salim')
