@@ -3,7 +3,7 @@ Selection sort is an in-place sorting algorithm. Selection sort works well for s
 """
 
 
-# O(n^2) in worst case and O(n) in best case
+# O(n^2) in worst case and O(n^2) in best case
 def selection_sort(num_list):
     print(num_list)
     # Find the minimum value and swap it with the current position.
