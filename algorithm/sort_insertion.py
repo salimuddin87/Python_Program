@@ -4,7 +4,7 @@ from the input data and inserts it into the correct position in the list being s
 """
 
 
-# O(n^2) in all the cases
+# O(n^2) in worst cases and O(n) in best case
 def insertion_sort(num_list):
     print(num_list)
     for i in range(1, len(num_list)):
