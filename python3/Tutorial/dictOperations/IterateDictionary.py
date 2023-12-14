@@ -6,7 +6,7 @@ class IterateDictionary:
 
     def default_method(self):
         print("By default dict iterate only keys")
-        for key in self.initDict:
+        for key in self.initDict.keys():
             print("%d -> %s" % (key, self.initDict[key]))
         return True
     
