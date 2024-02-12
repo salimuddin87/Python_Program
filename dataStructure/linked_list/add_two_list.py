@@ -1,6 +1,13 @@
 from typing import Optional
 
 
+"""
+You are given two non-empty linked lists representing two non-negative integers. 
+The digits are stored in reverse order, and each of their nodes contains a single 
+digit. Add the two numbers and return the sum as a linked list.
+"""
+
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -58,6 +65,26 @@ class Solution:
 
         return result
 
+    def print_list(self, ll: Optional[ListNode]):
+        arr = []
+        while ll is not None:
+            arr.append(ll.val)
+            ll = ll.next
+        print(arr)
+
 
 if __name__ == "__main__":
-    print(add_two_digit(5,2,1))
+    list1 = [2, 4, 9]
+    list2 = [5, 6, 4, 9]
+
+    l1 = None
+    for i in range(0, len(list1)):
+        l1 = append_ll(l1, list1[i])
+
+    l2 = None
+    for j in range(0, len(list2)):
+        l2 = append_ll(l2, list2[j])
+
+    obj = Solution()
+    r = obj.addTwoNumbers(l1, l2)
+    obj.print_list(r)
